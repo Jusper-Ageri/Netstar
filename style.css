@@ -6,6 +6,13 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container {
+  max-width: 1200px;   /* limit on large screens */
+  width: 100%;         /* fill smaller screens */
+  margin: 0 auto;      /* center horizontally */
+  padding: 0 1rem;     /* some padding on sides */
+}
+
 body {
   line-height: 1.6;
   color: #333;
@@ -244,3 +251,4 @@ footer {
   align-items: center;  /* center-align name + tagline */
   line-height: 1.2;
 }
+

@@ -1,0 +1,221 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+header {
+  background: #0a2540;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Hero sections */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #0a2540, #193b5c);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0a2540;
+}
+
+/* Services cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Clients */
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.clients-logos img {
+  max-width: 120px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.clients-logos img:hover {
+  filter: none;
+}
+
+/* Contact form */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  padding: 1rem;
+  border: none;
+  background: #0a2540;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #f39c12;
+}
+
+/* Footer */
+footer {
+  background: #0a2540;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Logo size control */
+.logo {
+  max-width: 300px;   /* limit logo width */
+  max-height: 150px;   /* limit logo height */
+  width: auto;        /* maintain aspect ratio */
+  height: auto;       /* maintain aspect ratio */
+  display: block;     /* avoids inline spacing issues */
+}
+
+
+/* Logo wrapper (circle) */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-circle {
+  width: 180px;
+  height: 170px;
+  border-radius: 50%;   /* circular shape */
+  background-color: #ffffff; /* keep white behind logo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;     /* clip logo inside */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* soft shadow */
+}
+
+.logo-circle img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.company-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b22222;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #0073e6;
+  margin-top: 3px;
+  text-align: center;
+}
+
+/* Company info (stacked text) */
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* center-align name + tagline */
+  line-height: 1.2;
+}

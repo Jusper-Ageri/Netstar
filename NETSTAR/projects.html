@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Netstar Technologies — Projects</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="logo-container">
+    <div class="logo-circle">
+      <img src="NETSTAR LOGO.jpg" alt="Netstar Technologies Logo">
+    </div>
+    <div class="company-info">
+      <div class="company-name">Netstar Technologies</div>
+      <div class="tagline">We Make it Happen</div>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Our Services</a></li>
+      <li><a href="projects.html">Sample Projects</a></li>
+      <li><a href="clients.html">Our Clients</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main>
+<section class="section projects">
+<div class="container">
+<h2>Sample Projects</h2>
+<p>Add and view completed projects.</p>
+<div class="projects-controls">
+<label class="upload-btn">+ Add Project<input type="file" id="projectUpload" accept="image/*" multiple hidden></label>
+<button id="clearGallery" class="btn ghost">Clear Gallery</button>
+</div>
+<div id="gallery" class="gallery"></div>
+<template id="projectTemplate">
+<div class="project card">
+<button class="remove-btn">✕</button>
+<img src="" alt="Project image">
+</div>
+</template>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container footer-inner">
+<div>© <span id="year"></span> Netstar Technologies. All rights reserved.</div>
+<div class="footer-links"><a href="#">Privacy</a> · <a href="#">Terms</a></div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

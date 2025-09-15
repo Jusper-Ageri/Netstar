@@ -29,3 +29,45 @@ if (form) {
     form.reset();
   });
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const gallery = document.getElementById("gallery");
+
+  // ✅ Define projects here
+  const projects = [
+    {
+      name: "Client A Website",
+      description: "Corporate website redesign with modern UI.",
+      image: "projects/project1.jpg"
+    },
+    {
+      name: "E-commerce Platform",
+      description: "Online shop with secure payment integration.",
+      image: "projects/project2.jpg"
+    },
+    {
+      name: "School Management System",
+      description: "Web app for managing student records and grading.",
+      image: "projects/project3.jpg"
+    }
+  ];
+
+  // Render projects dynamically
+  projects.forEach(project => {
+    const card = document.createElement("div");
+    card.classList.add("project", "card");
+    card.innerHTML = `
+      <img src="${project.image}" alt="${project.name}">
+      <div class="project-info">
+        <h3>${project.name}</h3>
+        <p>${project.description}</p>
+      </div>
+    `;
+    gallery.appendChild(card);
+  });
+
+  // Auto-update footer year
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
+

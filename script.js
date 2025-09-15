@@ -39,17 +39,17 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Client A Website",
       description: "Corporate website redesign with modern UI.",
-      image: "projects/project1.jpg"
+      image: "Popular.jpg"
     },
     {
       name: "E-commerce Platform",
       description: "Online shop with secure payment integration.",
-      image: "projects/project2.jpg"
+      image: "Karima.jgp"
     },
     {
       name: "School Management System",
       description: "Web app for managing student records and grading.",
-      image: "projects/project3.jpg"
+      image: "Gypsum ceiling.jpeg"
     }
   ];
 
@@ -70,4 +70,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // Auto-update footer year
   document.getElementById("year").textContent = new Date().getFullYear();
 });
+
 

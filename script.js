@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "E-commerce Platform",
       description: "Online shop with secure payment integration.",
-      image: "Karima.jgp"
+      image: "Karima.jpg"
     },
     {
       name: "School Management System",
@@ -70,5 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Auto-update footer year
   document.getElementById("year").textContent = new Date().getFullYear();
 });
+
 
 
